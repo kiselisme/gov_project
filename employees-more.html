@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employees more</title>
+
+    <!-- Иконка для владки -->
+    <link rel="shortcut icon" href="./images/logo.png" />
+
+    <!-- Главный css -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Адаптивный css -->
+    <link rel="stylesheet" href="./css/adaptive.css" />
+
+    <!-- Бургер css -->
+    <link rel="stylesheet" href="./css/burger-menu.css" />
+  </head>
+  <body class="my-image">
+    <!-- Версия для слабовидящих -->
+    <div class="access-header">
+      <div class="access-header__content">
+        <div class="access-header__top">
+          <div class="access-header__item">
+            <p>Размер шрифта</p>
+
+            <div class="access-header__buttons">
+              <button id="font-size-large">A+</button>
+              <button id="font-size-medium">A</button>
+              <button id="font-size-small">A-</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Интервал между букв</p>
+
+            <div class="access-header__buttons">
+              <button id="letter-spacing-large">А Б В</button>
+              <button id="letter-spacing-medium">А Б В</button>
+              <button id="letter-spacing-small">АБВ</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Изображения</p>
+
+            <div class="access-header__buttons">
+              <button id="bw-button">Ч/Б</button>
+              <button id="color-button">Цветные</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="access-header__bottom">
+          <button id="reset-styles-button">Сбросить стили</button>
+        </div>
+      </div>
+    </div>
+    <!-- Версия для слабовидящих -->
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./news.html">Новости</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./contacts.html">Контакты</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./documents.html">Постановления</a>
+            </li>
+            <li>
+              <span class="nav__link select">Разделы</span>
+              <ul>
+                <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
+                <li>
+                  <a class="nav__link" href="./infographic.html">Инфографика</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./gallery.html">Фотогалерея</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./employees.html">Сотрудники</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./feedback.html"
+                    >Интернет приемная</a
+                  >
+                </li>
+                <li>
+                  <a class="nav__link" href="#"
+                    >Перечень реализуемых проектов</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="nav__link select">О нас</span>
+              <ul>
+                <li><a class="nav__link" href="./about.html">О нас</a></li>
+                <li><a class="nav__link" href="#">Глава сельской управы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="language">
+          <span class="nav__link select"
+            ><i class="fa-solid fa-globe"></i> Язык</span
+          >
+          <ul>
+            <li><a class="nav__link" href="#">Кыргызча</a></li>
+            <li><a class="nav__link" href="#">Русский</a></li>
+          </ul>
+        </div>
+
+        <div class="eye">
+          <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
+          <a class="eye__title" href="#">Версия для слабовидящих</a>
+        </div>
+
+        <!-- Бургер меню -->
+        <div class="burger-menu">
+          <input type="checkbox" id="menu-toggle" />
+          <label id="trigger" for="menu-toggle"></label>
+          <label id="burger-menu" for="menu-toggle"></label>
+          <div class="side-bar__animated">
+            <div class="side-bar__content">
+              <div class="side-bar__header">
+                <h2><a class="side-bar__title" href="./index.html">Menu</a></h2>
+              </div>
+
+              <div class="side-bar__lists">
+                <ul class="side-bar__list">
+                  <li>
+                    <a href="./index.html">Главная</a>
+                  </li>
+                  <li>
+                    <a href="./news.html">Новости</a>
+                  </li>
+                  <li>
+                    <a href="./contacts.html">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="./documents.html">Постановления</a>
+                  </li>
+                </ul>
+
+                <ul class="side-bar__list">
+                  <li>
+                    <span class="side-bar__select">Разделы</span>
+
+                    <ul>
+                      <li><a href="./vacancy.html">Вакансии</a></li>
+                      <li><a href="./infographic.html">Инфографика</a></li>
+                      <li>
+                        <a href="./gallery.html">Фотогалерея</a>
+                      </li>
+                      <li>
+                        <a href="./employees.html">Сотрудники</a>
+                      </li>
+                      <li><a href="./feedback.html">Интернет приемная</a></li>
+                      <li>
+                        <a href="#">Перечень реализуемых проектов</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="side-bar__select">О нас</span>
+
+                    <ul>
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="#">Глава сельской управы</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Бургер меню -->
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Сотрудники подробнее -->
+    <section class="employees-more container">
+      <div class="employees-more__info">
+        <div class="employees-more__image">
+          <img src="./images/employeesFirst.png" alt="Employees-more image" />
+        </div>
+        <div>
+          <h2>Михаил Баринов</h2>
+          <h2>Директор</h2>
+          <span>Стаж 33 года</span>
+        </div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At natus
+        corporis eaque eum assumenda minima quidem reiciendis beatae rem!
+        Eligendi veritatis quasi fugiat cumque perferendis in nisi odit nulla
+        sed! Eligendi optio molestiae ab repudiandae aperiam voluptas autem est
+        esse numquam illo, aliquam maxime doloremque soluta sit necessitatibus
+        accusantium non quo repellat quasi laboriosam nisi voluptates
+        consequatur deleniti sunt. Quae! Pariatur dolores deleniti repudiandae
+        aperiam ut ad magnam possimus, aspernatur est odit vel iusto officia
+        harum asperiores perferendis! Nulla atque aspernatur vero in, quasi
+        recusandae aliquam dicta sed earum! Odit. Suscipit explicabo iste
+        dolorem placeat aspernatur veritatis, aliquam beatae eius officiis eum,
+        temporibus adipisci quo possimus cumque. Quaerat explicabo
+        necessitatibus laudantium eos veritatis beatae? Culpa dolore animi
+        nesciunt soluta repellendus. Modi soluta odio libero vero amet
+        necessitatibus fugiat tempore numquam inventore animi dignissimos
+        voluptatem consequuntur magnam minima saepe sequi id rerum, doloribus
+        quod culpa reprehenderit! Tenetur quaerat ipsum ipsam dolore?
+      </p>
+    </section>
+    <!-- Сотрудники подробнее -->
+
+    <!-- Пагинация -->
+    <ul class="pagination">
+      <li><a href="./employees.html">«</a></li>
+      <li><a href="./index.html">1</a></li>
+      <li><a href="./news.html">2</a></li>
+      <li><a href="./contacts.html">3</a></li>
+      <li><a href="./documents.html">4</a></li>
+      <li><a href="./vacancy.html">5</a></li>
+      <li><a href="./infographic.html">6</a></li>
+      <li><a href="./gallery.html">7</a></li>
+      <li class="pagination-active"><a href="./employees.html">8</a></li>
+      <li><a href="./feedback.html">9</a></li>
+      <li><a href="./about.html">10</a></li>
+      <li><a href="./site-map.html">11</a></li>
+      <li><a href="./faq.html">12</a></li>
+      <li><a href="./feedback.html">»</a></li>
+    </ul>
+    <!-- Пагинация -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-map-location-dot"></i> Bishkek, Dordoi Plaza
+          </li>
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-envelope"></i> test@gmail.com
+          </li>
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-phone"></i> +996709333333
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link_quetion" href="./site-map.html"
+              >Карта сайта</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="#"
+              >Информация и противодействии корупции</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="#"
+              >Политика конфиденциальности</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="./faq.html"
+              >Часто задаваемые вопросы</a
+            >
+          </li>
+        </ul>
+
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46785.87214849588!2d74.6029056!3d42.8703744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8ecb3f365%3A0x6551c797c5d374c7!2z0KLQoNCmIERvcmRvaSBQbGF6YSAy!5e0!3m2!1sru!2skg!4v1679641540469!5m2!1sru!2skg"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- JS - Главный -->
+    <script src="./js/main.js"></script>
+
+    <!-- JS - Иконка -->
+    <script
+      src="https://kit.fontawesome.com/1f5bacc93d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

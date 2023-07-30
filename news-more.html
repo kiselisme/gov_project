@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News more</title>
+
+    <!-- Иконка для владки -->
+    <link rel="shortcut icon" href="./images/logo.png" />
+
+    <!-- Слайдер css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Главный css -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Адаптивный css -->
+    <link rel="stylesheet" href="./css/adaptive.css" />
+
+    <!-- Бургер css -->
+    <link rel="stylesheet" href="./css/burger-menu.css" />
+  </head>
+  <body class="my-image">
+    <!-- Версия для слабовидящих -->
+    <div class="access-header">
+      <div class="access-header__content">
+        <div class="access-header__top">
+          <div class="access-header__item">
+            <p>Размер шрифта</p>
+
+            <div class="access-header__buttons">
+              <button id="font-size-large">A+</button>
+              <button id="font-size-medium">A</button>
+              <button id="font-size-small">A-</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Интервал между букв</p>
+
+            <div class="access-header__buttons">
+              <button id="letter-spacing-large">А Б В</button>
+              <button id="letter-spacing-medium">А Б В</button>
+              <button id="letter-spacing-small">АБВ</button>
+            </div>
+          </div>
+
+          <div class="access-header__item">
+            <p>Изображения</p>
+
+            <div class="access-header__buttons">
+              <button id="bw-button">Ч/Б</button>
+              <button id="color-button">Цветные</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="access-header__bottom">
+          <button id="reset-styles-button">Сбросить стили</button>
+        </div>
+      </div>
+    </div>
+    <!-- Версия для слабовидящих -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <a href="./index.html"> <img src="./images/logo.png" alt="logo" /></a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="./index.html">Главная</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./news.html">Новости</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./contacts.html">Контакты</a>
+            </li>
+            <li>
+              <a class="nav__link" href="./documents.html">Постановления</a>
+            </li>
+            <li>
+              <span class="nav__link select">Разделы</span>
+              <ul>
+                <li><a class="nav__link" href="./vacancy.html">Вакансии</a></li>
+                <li>
+                  <a class="nav__link" href="./infographic.html">Инфографика</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./gallery.html">Фотогалерея</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./employees.html">Сотрудники</a>
+                </li>
+                <li>
+                  <a class="nav__link" href="./feedback.html"
+                    >Интернет приемная</a
+                  >
+                </li>
+                <li>
+                  <a class="nav__link" href="#"
+                    >Перечень реализуемых проектов</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="nav__link select">О нас</span>
+              <ul>
+                <li><a class="nav__link" href="./about.html">О нас</a></li>
+                <li><a class="nav__link" href="#">Глава сельской управы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="language">
+          <span class="nav__link select"
+            ><i class="fa-solid fa-globe"></i> Язык</span
+          >
+          <ul>
+            <li><a class="nav__link" href="#">Кыргызча</a></li>
+            <li><a class="nav__link" href="#">Русский</a></li>
+          </ul>
+        </div>
+
+        <div class="eye">
+          <i class="eye__title fa-solid fa-eye" aria-hidden="true"></i>
+          <a class="eye__title" href="#">Версия для слабовидящих</a>
+        </div>
+
+        <!-- Бургер меню -->
+        <div class="burger-menu">
+          <input type="checkbox" id="menu-toggle" />
+          <label id="trigger" for="menu-toggle"></label>
+          <label id="burger-menu" for="menu-toggle"></label>
+          <div class="side-bar__animated">
+            <div class="side-bar__content">
+              <div class="side-bar__header">
+                <h2><a class="side-bar__title" href="./index.html">Menu</a></h2>
+              </div>
+
+              <div class="side-bar__lists">
+                <ul class="side-bar__list">
+                  <li>
+                    <a href="./index.html">Главная</a>
+                  </li>
+                  <li>
+                    <a href="./news.html">Новости</a>
+                  </li>
+                  <li>
+                    <a href="./contacts.html">Контакты</a>
+                  </li>
+                  <li>
+                    <a href="./documents.html">Постановления</a>
+                  </li>
+                </ul>
+
+                <ul class="side-bar__list">
+                  <li>
+                    <span class="side-bar__select">Разделы</span>
+
+                    <ul>
+                      <li><a href="./vacancy.html">Вакансии</a></li>
+                      <li><a href="./infographic.html">Инфографика</a></li>
+                      <li>
+                        <a href="./gallery.html">Фотогалерея</a>
+                      </li>
+                      <li>
+                        <a href="./employees.html">Сотрудники</a>
+                      </li>
+                      <li><a href="./feedback.html">Интернет приемная</a></li>
+                      <li>
+                        <a href="#">Перечень реализуемых проектов</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <span class="side-bar__select">О нас</span>
+
+                    <ul>
+                      <li><a href="./about.html">О нас</a></li>
+                      <li><a href="#">Глава сельской управы</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Бургер меню -->
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Новости поднобнее -->
+    <section class="container">
+      <div class="news-more-data-eye">
+        <i class="fa-solid fa-clock" style="color: #1f3b99"></i
+        ><span class="date"></span>
+        <i id="views-icon" class="fas fa-eye" style="color: #1f3b99"></i>
+        <span class="views">0</span>
+      </div>
+
+      <h2 class="page-title">
+        Аскар Сыдыков: Бизнес сталкивается с проблемами из-за ограничения на
+        экспорт
+      </h2>
+
+      <div class="news-more containerAnalogue">
+        <div class="news-more__image">
+          <img
+            src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+            alt="news-more"
+          />
+        </div>
+
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum
+          quibusdam reiciendis eos harum officiis, quisquam impedit repudiandae
+          sequi accusamus mollitia! Consequuntur itaque possimus quos maiores
+          deserunt recusandae velit sequi nemo?
+        </p>
+        <p>
+          <strong>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            accusantium optio cumque facere debitis consequuntur nam impedit
+            veniam fugiat maiores vel odio quo repellat suscipit pariatur
+            molestias, quasi itaque reprehenderit!</strong
+          >
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+          quibusdam beatae, optio ut eos aut sequi deleniti repellendus ipsam
+          illum incidunt vitae hic suscipit dolorum nemo quaerat veniam corrupti
+          perspiciatis! Velit eos ut autem quas suscipit veniam cumque, optio
+          nemo qui dolores illo, necessitatibus, ullam ducimus vel temporibus.
+          Possimus voluptates sint nostrum, quam animi ipsa sed numquam
+          aspernatur explicabo itaque? Magnam molestias vel impedit consequuntur
+          quas perferendis provident at incidunt quibusdam modi accusamus,
+          aperiam praesentium ad nostrum fugiat ea officiis ipsum? Dolorum nobis
+          facilis asperiores nemo aut deserunt incidunt adipisci! Asperiores
+          voluptatum, hic, similique deleniti esse adipisci aut sunt nam,
+          inventore voluptatem suscipit qui ut! Soluta animi nam molestias eius
+          esse harum sapiente explicabo. Laudantium fuga natus dolorem minima
+          doloremque! Quam cumque, quibusdam ab harum dolores error ipsum
+          dignissimos maiores iure perferendis quaerat veniam, distinctio
+          recusandae ipsa nisi vero eaque pariatur odio optio soluta nobis
+          possimus aspernatur in qui. Blanditiis? Nesciunt laborum temporibus
+          accusantium optio libero. Non ratione ad, accusamus amet hic, vero
+          harum repellat quis, nulla itaque ipsa sunt sequi labore perferendis
+          molestiae vel odio quos blanditiis tenetur culpa. Consequuntur
+          inventore ipsam eum itaque officiis maxime rem eaque placeat aliquam.
+          Assumenda eius ipsam labore iste dolorem nobis sit soluta, est
+          accusamus eaque dignissimos ducimus blanditiis molestias, reiciendis
+          distinctio architecto? Harum, quas cupiditate incidunt distinctio ipsa
+          sit cumque nobis voluptatum aliquid? Nisi, velit culpa veniam,
+          veritatis, animi suscipit incidunt odit ullam tempora dolor fugit?
+          Recusandae quam consectetur itaque ut laboriosam! Harum earum
+          voluptatibus adipisci ex rerum similique consequuntur reiciendis ad.
+          Blanditiis odio fuga corporis veritatis consequuntur, eaque deserunt!
+          Deleniti vel quis veniam fugit consectetur cum, iste quibusdam
+          aspernatur sequi molestiae. Ex repudiandae sequi dolorum alias,
+          eveniet blanditiis omnis, ea quasi molestiae cupiditate quod itaque
+          perspiciatis eligendi fugit, iusto in assumenda ad illum ratione ipsum
+          recusandae! Quia accusamus tenetur saepe nisi. Sit quos sunt est dicta
+          odio magnam possimus nesciunt provident, labore voluptate modi quaerat
+          rerum quam esse, vitae asperiores natus voluptatem id doloribus hic
+          omnis laudantium amet aperiam! Architecto, aliquid? Nulla quam nihil
+          consectetur. Magnam, dolore inventore iste mollitia quae iusto sunt
+          harum! Iure sint fugit enim voluptatibus, nesciunt cum, consectetur
+          aliquam perspiciatis debitis et suscipit provident nam voluptatem
+          quisquam.
+        </p>
+
+        <!-- Cлайдер -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img
+                  src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+                  alt="random"
+                />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img src="./images/random.jpg" alt="random" />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img
+                  src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+                  alt="random"
+                />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img
+                  src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+                  alt="random"
+                />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img
+                  src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+                  alt="random"
+                />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img src="./images/flagFirst.jpg" alt="random" />
+              </div>
+            </div>
+
+            <div class="slide swiper-slide">
+              <div class="slide-more__image">
+                <img src="./images/flagSecond.jpg" alt="random" />
+              </div>
+            </div>
+          </div>
+
+          <div class="slide__button swiper-button-next"></div>
+          <div class="slide__button swiper-button-prev"></div>
+
+          <div class="сlue-image">
+            <a href="#" class="slide-1 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 1</span>
+              </div>
+              <img
+                src="./images/Ala-Too-Square-Bishkek-Kyrgyzstan.webp"
+                alt="random"
+            /></a>
+            <a href="#" class="slide-2 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 2</span>
+              </div>
+              <img src="./images/random.jpg" alt="random" />
+            </a>
+            <a href="#" class="slide-3 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 3</span>
+              </div>
+              <img
+                src="./images/42227f99ce45d942a1824c6beadbb4e4.jpg"
+                alt="random"
+            /></a>
+            <a href="#" class="slide-4 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 4</span>
+              </div>
+              <img
+                src="./images/772604.c2d590a5b031d53cc9add60339607368.jpg"
+                alt="random"
+            /></a>
+            <a href="#" class="slide-5 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 5</span>
+              </div>
+              <img
+                src="./images/Kyrgyzatan_Summary_tcm10-33237.jpg"
+                alt="random"
+            /></a>
+            <a href="#" class="slide-6 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 6</span>
+              </div>
+              <img src="./images/flagFirst.jpg" alt="random" />
+            </a>
+            <a href="#" class="slide-7 сlue-image__link">
+              <div class="blackout сlue-image__blackout">
+                <span>Slide 7</span>
+              </div>
+              <img src="./images/flagSecond.jpg" alt="random" />
+            </a>
+          </div>
+        </div>
+        <!-- Cлайдер -->
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, enim
+          quos. Ipsum illum architecto aliquam, odio aliquid incidunt voluptatum
+          adipisci hic, recusandae, neque impedit necessitatibus facilis non?
+          Aliquam, repellendus quam? Ipsam explicabo temporibus amet sunt
+          nesciunt voluptas ipsa nulla eius quisquam totam, quidem natus, iure
+          fugit eligendi quis id, cupiditate laudantium? Ducimus aliquid minima
+          velit blanditiis, dolor et dolore consequatur. Quidem ut excepturi
+          debitis officiis omnis repudiandae accusantium consequuntur, amet ipsa
+          nesciunt nemo quo autem impedit. Blanditiis, voluptates consequatur.
+          Blanditiis consequatur quibusdam, incidunt similique quo porro?
+          Adipisci deleniti architecto amet. Esse culpa temporibus totam ipsum
+          harum modi, voluptas odio, iste in atque, facere assumenda fugit sequi
+          explicabo dolores? Vitae, nisi repellendus. Cupiditate repudiandae
+          magnam molestiae labore. Asperiores expedita nesciunt distinctio?
+          Architecto consequuntur culpa aut, autem hic laudantium quia sequi
+          odit in quam saepe sed fuga, quae voluptatum praesentium quas eum
+          reprehenderit! Temporibus explicabo sunt architecto facere at
+          repudiandae recusandae ipsam! Eum quas quis voluptatem possimus sed
+          cupiditate sunt odio veniam necessitatibus quisquam nihil pariatur
+          perferendis quod, quasi minus. Laboriosam minus quas non recusandae
+          libero, tempore nobis consectetur facilis perspiciatis voluptate.
+          Soluta, praesentium possimus earum, optio aliquam dignissimos
+          veritatis autem iure et laudantium error at necessitatibus accusantium
+          deleniti dolorum ducimus nulla, ex eligendi amet blanditiis. Quae
+          totam veritatis libero culpa tempora. Incidunt rerum reiciendis porro
+          fugit enim impedit facilis, qui pariatur ipsam, dolor molestias
+          veritatis nemo necessitatibus vitae similique dolorem aliquid.
+          Provident, nobis odio deleniti adipisci quos officia quo similique
+          dolore? Pariatur qui, non iusto harum quisquam autem modi iste esse
+          perspiciatis dolores facere, consectetur dolore? Quod sit
+          reprehenderit totam fuga nihil id amet porro delectus nisi, adipisci
+          optio alias nam. Deserunt labore sunt deleniti laboriosam sequi
+          nostrum nemo repellendus aliquam. Tenetur minima commodi neque odio
+          nihil quam dolore a autem! Fuga provident amet odit rem aliquid nisi
+          distinctio velit in. Perspiciatis maxime mollitia voluptatem
+          voluptatum ipsum? Dolorem, voluptas architecto. Quasi odio quod
+          possimus impedit dolore ad exercitationem ratione, perspiciatis
+          laudantium recusandae porro, voluptas aliquid doloremque, consectetur
+          veritatis dignissimos. Totam, voluptatum. Neque vero exercitationem
+          eos architecto. Perspiciatis eveniet nam doloremque mollitia eum hic
+          sapiente vero magnam debitis a facilis architecto voluptas, amet iusto
+          excepturi! Cumque vel fugiat cupiditate tempora esse totam? Numquam
+          minus ad veniam quas quisquam aut distinctio sit itaque id maiores rem
+          nihil dolore quos, officiis nam, eum fugiat molestias asperiores
+          expedita provident suscipit ab eos cumque impedit! Fuga! Eveniet
+          numquam quisquam eaque recusandae omnis doloribus inventore illo?
+          Labore corrupti magni dignissimos rerum autem tempora ipsum ex tenetur
+          nesciunt fugiat minima optio quod minus explicabo deserunt accusamus,
+          animi repellendus. Ipsam, qui! Quidem, nulla laboriosam? Repudiandae
+          sed quam fugiat facilis praesentium debitis modi optio reprehenderit
+          commodi eligendi, incidunt molestiae quas atque deserunt
+          necessitatibus qui totam delectus odit sequi, earum cum. Labore
+          praesentium veniam rem dicta non inventore quaerat, voluptate vel
+          dolore provident, voluptatibus, quam eius laboriosam corrupti a?
+          Temporibus recusandae odit facilis dolor. Voluptatum eos unde dicta
+          sed cumque soluta. Neque fugiat, veritatis cupiditate quos sapiente
+          laudantium eius eos aperiam odit possimus porro laboriosam nisi
+          voluptates distinctio quas modi rerum non in, esse eum quia quibusdam.
+          Ducimus odit ex veritatis. Harum, rem vero ex a ipsa at sit nam error,
+          ducimus ullam qui in iste tempore consequatur! Quae non dolorem
+          molestiae, ullam, sit vitae exercitationem et officia, voluptatum
+          doloremque repellat. Et voluptates adipisci repellendus culpa ullam,
+          neque molestiae aspernatur dicta delectus numquam assumenda voluptatum
+          praesentium cupiditate quisquam maiores, nobis at placeat. At nesciunt
+          debitis nam quo tempora aliquid sint hic. Reiciendis culpa voluptatum
+          fugiat natus maxime sequi quis cupiditate delectus. Cupiditate
+          laudantium quo error inventore facilis velit quae, ducimus tenetur
+          quidem magnam sunt, sequi aspernatur accusamus dicta! Fuga, eum eaque.
+        </p>
+        <p>
+          <strong>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+            accusantium optio cumque facere debitis consequuntur nam impedit
+            veniam fugiat maiores vel odio quo repellat suscipit pariatur
+            molestias, quasi itaque reprehenderit!</strong
+          >
+        </p>
+      </div>
+    </section>
+    <!-- Новости поднобнее -->
+
+    <!-- Пагинация -->
+    <ul class="pagination">
+      <li><a href="./news.html">«</a></li>
+      <li><a href="./index.html">1</a></li>
+      <li class="pagination-active"><a href="./news.html">2</a></li>
+      <li><a href="./contacts.html">3</a></li>
+      <li><a href="./documents.html">4</a></li>
+      <li><a href="./vacancy.html">5</a></li>
+      <li><a href="./infographic.html">6</a></li>
+      <li><a href="./gallery.html">7</a></li>
+      <li><a href="./employees.html">8</a></li>
+      <li><a href="./feedback.html">9</a></li>
+      <li><a href="./about.html">10</a></li>
+      <li><a href="./site-map.html">11</a></li>
+      <li><a href="./faq.html">12</a></li>
+      <li><a href="./contacts.html">»</a></li>
+    </ul>
+    <!-- Пагинация -->
+
+    <!-- Footer -->
+    <footer class="footer" id="contacts">
+      <div class="footer__content">
+        <ul class="footer__list">
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-map-location-dot"></i> Bishkek, Dordoi Plaza
+          </li>
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-envelope"></i> test@gmail.com
+          </li>
+          <li onmouseup="showTooltip(event)">
+            <i class="fa-solid fa-phone"></i> +996709333333
+          </li>
+        </ul>
+
+        <ul class="footer__list">
+          <li>
+            <a class="footer__link_quetion" href="./site-map.html"
+              >Карта сайта</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="#"
+              >Информация и противодействии корупции</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="#"
+              >Политика конфиденциальности</a
+            >
+          </li>
+          <li>
+            <a class="footer__link_quetion" href="./faq.html"
+              >Часто задаваемые вопросы</a
+            >
+          </li>
+        </ul>
+
+        <iframe
+          class="location-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46785.87214849588!2d74.6029056!3d42.8703744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8ecb3f365%3A0x6551c797c5d374c7!2z0KLQoNCmIERvcmRvaSBQbGF6YSAy!5e0!3m2!1sru!2skg!4v1679641540469!5m2!1sru!2skg"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- JS - Главный -->
+    <script src="./js/main.js"></script>
+
+    <!-- JS - Иконка -->
+    <script
+      src="https://kit.fontawesome.com/1f5bacc93d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Слайдер JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
+    <script>
+      // Слайдер JS
+      const mySwiper = new Swiper(".swiper", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        speed: 1000,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const swiperEl = document.querySelector(".swiper");
+
+      const swiper = swiperEl.swiper;
+
+      document
+        .querySelector(".slide-1")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(0, 0);
+        });
+
+      document
+        .querySelector(".slide-2")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(1, 0);
+        });
+
+      document
+        .querySelector(".slide-3")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(2, 0);
+        });
+
+      document
+        .querySelector(".slide-4")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(3, 0);
+        });
+
+      document
+        .querySelector(".slide-5")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(4, 0);
+        });
+
+      document
+        .querySelector(".slide-6")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(5, 0);
+        });
+
+      document
+        .querySelector(".slide-7")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.slideTo(6, 0);
+        });
+      // Слайдер JS
+    </script>
+  </body>
+</html>
