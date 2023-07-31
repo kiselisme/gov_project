@@ -1,7 +1,6 @@
-photo_2023-07-31_18-25-02.jpg
+
 
 **Government Website**
-
 This project is a web application designed to provide citizens with up-to-date information on news, 
 regulations, vacancies, and also includes  Kyrgyz and Russian version for visually impaired users.
 
