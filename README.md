@@ -5,7 +5,6 @@ This project is a web application designed to provide citizens with up-to-date i
 regulations, vacancies, and also includes  Kyrgyz and Russian version for visually impaired users.
 
 **Key Features**
-
 Our Government Website offers the following features.
 
 News: Users can explore the latest news and events happening in our country.
