@@ -5,11 +5,15 @@ regulations, vacancies, and also includes a Kyrgyz version for visually impaired
 
 **Key Features**
 
-Our Government Website offers the following features:
+Our Government Website offers the following features.
+
 News: Users can explore the latest news and events happening in our country.
+
 News articles are regularly updated and displayed in chronological order.
+
 Regulations: Official government regulations and decrees are available on the website. This section 
 enables users to stay informed about changes and decisions made by the authorities.
+
 Vacancies: For those seeking employment in government institutions, our website provides
 information about available job vacancies and the application process.
 
